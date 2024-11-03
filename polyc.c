@@ -4,8 +4,7 @@
    Created:    2 Nov, 2024
 
    PURPOSE : This program is designed to create 
-   one polyglot file from 3 input files
-   consisiting of PDF, JPEG and ZIP.
+   one polyglot file from 3 input files. Namely PDF, JPEG and ZIP.
 */
 
 #include "polyc.h"
