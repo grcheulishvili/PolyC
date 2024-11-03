@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
     file[1] = argv[2];
     file[2] = argv[3];
 
-    // checks if given files exist on the system
+    // check if given files exist on the system
     for (int i = 0; i < 3; i++)
     {
         if (access(file[i], F_OK) == 0)
@@ -55,6 +55,12 @@ int main(int argc, char *argv[])
 
 }
 
+/*
+
+ print file contents given buffer size. 
+ NEEDS CHANGE
+
+*/
 char *print_contents(FILE *ptr)
 {
     unsigned char buffer[100];
