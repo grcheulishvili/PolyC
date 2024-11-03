@@ -6,7 +6,7 @@ initial intended supported filetypes:
 	2. PDF
 	3. ZIP
 
-	Usage: polyc --in <file1> <file2> <file3> --out <output> 
+	Usage: polyc <file1> <file2> <file3>
 
 
 
