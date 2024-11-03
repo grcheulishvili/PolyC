@@ -43,12 +43,12 @@ int main(int argc, char *argv[])
     {
         if (access(file[i], F_OK) == 0)
         {
-            printf("File \"%s\" exists.\n", file[i]);
+            printf("\nFile \"%s\" exists.\n", file[i]);
             print_contents(file[i]);
         }
         else
         {
-            fprintf(stderr, "File %s doesn't exist.\n", file[i]);
+            fprintf(stderr, "\nFile %s doesn't exist.\n", file[i]);
             return -1;
         }
     }
@@ -56,22 +56,21 @@ int main(int argc, char *argv[])
 }
 
 /*
-
  print file contents given buffer size. 
- NEEDS CHANGE
-
+ NEEDS OPTIMIZATION
 */
 char *print_contents(FILE *ptr)
 {
     unsigned char buffer[100];
     FILE *file;
-    file = fopen(ptr, "rb");
+    file = fopen(ptr, "r");
 
+    fseek(file, 0x00, SEEK_SET);
     fread(buffer, sizeof(buffer), 1, file);
 
     for(int i = 0; i < 100; i++)
     {
-        printf("%u ", buffer[i]);
+        printf("%x ", buffer[i]);
     }
     printf("\n");   
 }
