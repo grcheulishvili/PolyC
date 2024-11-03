@@ -1,4 +1,8 @@
-PolyC - polyglot file creator written in C
+# PolyC 
+
+--------
+
+## polyglot file generator written in C
 
 initial intended supported filetypes:
 
