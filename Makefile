@@ -1,5 +1,5 @@
 polyc: polyc.c
-	gcc polyc.c -o polyc
+	gcc polyc.c -o bin/polyc
 
 clean: 
 	rm *.out 
